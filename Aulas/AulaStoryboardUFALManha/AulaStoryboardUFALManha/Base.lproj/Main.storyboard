@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2C1-Kh-Msn">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tinder-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AulaStoryboardUFALManha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tinder" image="moon.stars.fill" catalog="system" id="Ee7-Ov-zvP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="806"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6E3-oy-E9j">
+            <objects>
+                <viewController id="9VK-RB-CGx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gpT-Ov-fja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-UG-BzR">
+                                <rect key="frame" x="178" y="270" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x5u-ut-vCe" kind="show" id="KwJ-e7-g0N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rbt-bd-Pro"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1ec-p0-Vzm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNh-5J-0Oj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3376.8000000000002" y="391.75412293853077"/>
+        </scene>
+        <!--Source View Controller-->
+        <scene sceneID="tt3-fL-2za">
+            <objects>
+                <viewController id="ngp-ow-Qmg" customClass="SourceViewController" customModule="AulaStoryboardUFALManha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Jn-VP-zdz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZK-pb-jrg">
+                                <rect key="frame" x="81" y="316" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="LbW-H3-U3E"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K4d-mU-DDc">
+                        <barButtonItem key="rightBarButtonItem" title="Seguir" id="1DG-PT-tmV">
+                            <connections>
+                                <segue destination="E1m-mo-IWO" kind="show" identifier="newColor" id="XLj-WL-gdE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="colorTextField" destination="fZK-pb-jrg" id="seM-9p-1LT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a25-ln-v73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3376.8000000000002" y="-274.81259370314842"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vef-U9-Vrb">
+            <objects>
+                <tabBarController id="2C1-Kh-Msn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ghc-8V-mFc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Dqt-8X-d1X" kind="relationship" relationship="viewControllers" id="6j7-2p-iD0"/>
+                        <segue destination="MSP-b8-pR0" kind="relationship" relationship="viewControllers" id="jrc-2J-YhY"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ozm-FV-8PL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLv-Qp-w2i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="57"/>
+        </scene>
+        <!--Target View Controller-->
+        <scene sceneID="R4C-Vl-yBr">
+            <objects>
+                <viewController id="E1m-mo-IWO" customClass="TargetViewController" customModule="AulaStoryboardUFALManha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2vV-wX-G9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICC-yG-pFJ">
+                                <rect key="frame" x="0.0" y="313" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6os-VR-Osv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JLx-sX-tQ8"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="ICC-yG-pFJ" id="bsP-lx-ZfR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytG-Jd-dqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4320.8000000000002" y="-275.71214392803603"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zN8-DC-TpQ">
+            <objects>
+                <viewController id="x5u-ut-vCe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SOu-7h-YEt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QHF-ZB-KBp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p5H-ae-Yh9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FD5-e6-hYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4316" y="391.75412293853077"/>
+        </scene>
+        <!--Whatsapp-->
+        <scene sceneID="F2U-dz-eg7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dqt-8X-d1X" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Whatsapp" image="message.fill" catalog="system" id="vex-By-jfs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0J5-G7-ppg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ngp-ow-Qmg" kind="relationship" relationship="rootViewController" id="jB6-LU-l8M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgG-7P-JlB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.5999999999999" y="-274.81259370314842"/>
+        </scene>
+        <!--Telegram-->
+        <scene sceneID="oeT-8a-m4d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MSP-b8-pR0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Telegram" image="paperplane.fill" catalog="system" id="Hc3-Ku-PGo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2rh-gn-Nee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9VK-RB-CGx" kind="relationship" relationship="rootViewController" id="InW-yQ-NHj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5z-eK-Nf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.5999999999999" y="391.75412293853077"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="moon.stars.fill" catalog="system" width="64" height="62"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
